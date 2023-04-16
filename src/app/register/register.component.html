@@ -1,0 +1,41 @@
+<a class="button" type="submit" routerLink="/home" mat-raised-button color="accent">#Home</a>
+
+<body>
+
+
+
+  <div class="container">
+
+
+    <h2>Kayıt Sayfası</h2>
+
+    <form ngSubmit="onSubmit" registerForm="ngForm">
+      <div class="form-group"> <br>
+       <label for="firstName">İsim:</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" ngModel="user.firstName" required>
+      </div>
+
+      <div class="form-group"> <br>
+        <label for="lastName">Soyisim</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" ngModel="user.lastName" required>
+      </div>
+
+      <div class="form-group"> <br>
+        <label for="city">İl:</label>
+        <input type="text" class="form-control" id="city" name="city" ngModel="user.city" required>
+      </div>
+      <div class="form-group"><br>
+        <label for="city">İlçe:</label>
+        <input type="text" class="form-control" id="city" name="city" ngModel="user.city" required>
+      </div>
+
+<br>
+      <a routerLink="/List" mat-raised-button color="accent">New List</a>
+
+      <button type="submit" class="btn btn-primary">Kaydet
+   </button>
+
+    </form>
+  </div>
+
+  <router-outlet></router-outlet>

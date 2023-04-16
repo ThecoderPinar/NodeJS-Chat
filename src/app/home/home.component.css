@@ -1,0 +1,17 @@
+.card {
+  max-width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #dbdbdb;
+  border-radius: 0.25rem;
+}
+
+p {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
